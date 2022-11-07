@@ -1,0 +1,8 @@
+body{
+    background: rgb(3,18,176);
+    background: linear-gradient(130deg, rgba(3,18,176,1) 5%, rgba(147,127,5,1) 51%,  rgba(136,0,0,1) 100%);
+    background-attachment: fixed;
+}
+h4{
+    color: white;
+}
