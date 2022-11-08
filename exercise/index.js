@@ -7,12 +7,15 @@ const __dirname = dirname(__filename);
 
 const app = express();
 const hostname = '127.0.0.1';
-const port = 8000;
+const port = 2447;
 
 app.use(express.static('public')); //access from public
 
 app.get('(/)', (req, res) => {
     res.sendFile(__dirname + '/public/product.html');
+});
+app.get('/logo', (req, res) => {
+    res.sendFile(__dirname + '/public/assets/logo.png');
 });
 app.get('/product', (req, res) => {
     res.sendFile(__dirname + '/public/product.html');
